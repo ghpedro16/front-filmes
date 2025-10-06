@@ -12,15 +12,30 @@
 </head>
 <body>
     <header>
-        <input type="text" placeholder="Busque por filmes ou series" id="input">
-        <button>FILMES</button>
-        <button>SERIES</button>
+        <div class="pesquisar">
+            <input type="text" placeholder="Busque por filmes ou series" id="input">
+            <button id="btn-pesquisa">Busca</button>
+        </div>
+        <button>
+            <a href="./filmes.html">FILMES</a>
+        </button>
+        <button>
+            <a href="./series.html">SERIES</a>
+        </button>
     </header>
-
-    <hr>
+    <main>
+        <div class="carrossel" id="carrossel">
+            <span>MAIS POPULARES</span>
+            <button id="nextBtn"></button>
+            <div class="cards" id="cards"></div>
+            <button id="prevBtn"></button>
+        </div>
     
-    <div class="slogan">MAIS POPULARES</div>
+        <div class="busca" id="busca"></div>
+    </main>
+    <footer></footer>
+    
 
-    <div class="" id="cards-populares"></div>
+
 </body>
 </html>

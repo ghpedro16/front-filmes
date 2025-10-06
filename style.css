@@ -34,8 +34,20 @@ header button{
     border-radius: 4px;
 }
 
-.slogan{
+#btn-pesquisa{
+    height: 50px;
+    width: 120px;
+    border: 2px;
+    border-radius: 4px;
+}
+
+.carrossel span{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.cards img{
+    height: 300px;
+    width: 200px;
 }
