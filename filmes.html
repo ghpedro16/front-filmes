@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./filmes.css">
     <title>FILMES</title>
 </head>
 <body>
-    
+    <header>
+        <nav class="logo">
+            <a href="./index.html" class="nav-home">
+                <button class="btn-home">
+                    <img src="./img/amazon-prime.png" alt="logo">
+                </button>
+            </a>
+        </nav>
+        
+        <div class="search-container">
+            <input type="text" placeholder="Busque por filmes e séries" id="input" />
+            <button id="btn-pesquisa">
+                <img src="./img/pepicons-pop_loop.png" alt="buscar">
+            </button>
+        </div>
+
+        <nav>
+            <button class="btn-filmes"><a href="./filmes.html">FILMES</a></button>
+            <button class="btn-series"><a href="./series.html">SÉRIES</a></button>
+        </nav>
+    </header>
+    <main>
+        <div class="filmes" id="filmes"></div>
+    </main>
 </body>
 </html>

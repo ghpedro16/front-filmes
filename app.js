@@ -30,3 +30,21 @@ async function buscar(){
 
 const buscar = document.getElementById('btn-pesquisa')
 buscar.addEventListener('click', buscar())
+
+async function filmes(){
+    const url = `http://www.omdbapi.com/?apikey=${apikey}&s=Marvel`
+
+    const response = await fetch(url)
+    const cards = await response.json()
+
+    const filmes = document.getElementById('filmes')
+    filmes.innerHTML = ''
+
+    cards.Search.forEach(function(item){
+        const imagem = document.createElement('img')
+        imagem.poster = item 
+        filmes.appendChild(imagem.item)
+    })
+}
+
+filmes()
